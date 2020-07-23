@@ -75,10 +75,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Entities:BuildingObject"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Entities#hasActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -276,7 +273,7 @@
     "@value" : "Describes the agent who consumes the information coming from the activity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "consumes From"
+    "@value" : "consumesFrom"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isAgentIn"
@@ -291,7 +288,7 @@
     "@value" : "Relationship between property state and level of detail."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has LOD level"
+    "@value" : "hasLODLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
@@ -309,7 +306,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Level"
+    "@value" : "hasLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
@@ -337,7 +334,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Next Level"
+    "@value" : "hasNextLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
@@ -358,7 +355,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Next Stage"
+    "@value" : "hasNextStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
@@ -386,7 +383,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Previous Level"
+    "@value" : "hasPreviousLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
@@ -404,7 +401,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Previous Stage"
+    "@value" : "hasPreviousStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
@@ -429,7 +426,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Stage"
+    "@value" : "hasStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
@@ -457,7 +454,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Sub Level"
+    "@value" : "hasSubLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
@@ -478,7 +475,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Sub Stage"
+    "@value" : "hasSubStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
@@ -499,7 +496,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has super level"
+    "@value" : "hasSuperLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
@@ -517,7 +514,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Super Stage"
+    "@value" : "hasSuperStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
@@ -529,7 +526,7 @@
   "@id" : "https://w3id.org/digitalconstruction/Lifecycle#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Value"
+    "@value" : "hasValue"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Lifecycle#isLevelOf",
@@ -538,7 +535,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LODLevel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is Level Of"
+    "@value" : "isLevelOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework"
@@ -551,6 +548,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Variables#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "isLimitedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Variables#PropertyState"
@@ -565,7 +565,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is Stage Of"
+    "@value" : "isStageOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework"
@@ -580,7 +580,7 @@
     "@value" : "Describes the agent who process and updates the information to activity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "process From"
+    "@value" : "processFrom"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isAgentIn"
@@ -592,7 +592,7 @@
     "@value" : "Describes the agent who provides the information coming from the activity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "provides To"
+    "@value" : "providesTo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#isAgentIn"
@@ -625,7 +625,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Entities#BuildingObject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "was needed for"
+    "@value" : "wasNeededFor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"

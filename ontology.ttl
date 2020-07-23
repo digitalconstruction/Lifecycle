@@ -117,7 +117,7 @@
 :consumesFrom rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <https://w3id.org/digitalconstruction/Entities#isAgentIn> ;
               rdfs:comment "Describes the agent who consumes the information coming from the activity" ;
-              rdfs:label "consumes From" .
+              rdfs:label "consumesFrom" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasLODLevel
@@ -126,7 +126,7 @@
              rdfs:range :LODLevel ;
              <http://purl.org/dc/terms/description> "Describes the property values and their level of detail regarding to the specific LOD Framework" ;
              rdfs:comment "Relationship between property state and level of detail." ;
-             rdfs:label "has LOD level" .
+             rdfs:label "hasLODLevel" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasLevel
@@ -139,7 +139,7 @@
                                    :hasSubLevel
                                  ) ;
           <http://purl.org/dc/terms/description> "Enables the connection betweendifferent levels to its framework" ;
-          rdfs:label "has Level" .
+          rdfs:label "hasLevel" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasNextLevel
@@ -150,7 +150,7 @@
               rdfs:domain :LODLevel ;
               rdfs:range :LODLevel ;
               <http://purl.org/dc/terms/description> "Indicates the sequence of levels." ;
-              rdfs:label "has Next Level" .
+              rdfs:label "hasNextLevel" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasNextStage
@@ -164,7 +164,7 @@
                                        :hasSubStage
                                      ) ;
               <http://purl.org/dc/terms/description> "Enables the relation between the stages and defines the sequence of the stages." ;
-              rdfs:label "has Next Stage" .
+              rdfs:label "hasNextStage" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel
@@ -174,7 +174,7 @@
                   rdfs:domain :LODLevel ;
                   rdfs:range :LODLevel ;
                   <http://purl.org/dc/terms/description> "Indicates the sequence of levels." ;
-                  rdfs:label "has Previous Level" .
+                  rdfs:label "hasPreviousLevel" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage
@@ -187,7 +187,7 @@
                                            :hasSubStage
                                          ) ;
                   <http://purl.org/dc/terms/description> "Enables the relation between the stages and defines the sequence of the stages." ;
-                  rdfs:label "has Previous Stage" .
+                  rdfs:label "hasPreviousStage" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasStage
@@ -200,7 +200,7 @@
                                    :hasSubStage
                                  ) ;
           <http://purl.org/dc/terms/description> "Enables the relationship between the BLCS framework and different stages involved in it." ;
-          rdfs:label "has Stage" .
+          rdfs:label "hasStage" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel
@@ -211,7 +211,7 @@
              rdfs:domain :LODLevel ;
              rdfs:range :LODLevel ;
              <http://purl.org/dc/terms/description> "Represents the relation between Upper levels and its sub level" ;
-             rdfs:label "has Sub Level" .
+             rdfs:label "hasSubLevel" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasSubStage
@@ -222,7 +222,7 @@
              rdfs:domain :BuildingLifecycleStage ;
              rdfs:range :BuildingLifecycleStage ;
              <http://purl.org/dc/terms/description> "Describe the relationship between main and its sub stages involved in a specific BLCS framework." ;
-             rdfs:label "has Sub Stage" .
+             rdfs:label "hasSubStage" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel
@@ -232,7 +232,7 @@
                rdfs:domain :LODLevel ;
                rdfs:range :LODLevel ;
                rdfs:comment "Represents the relation between Upper levels and its sub level" ;
-               rdfs:label "has super level" .
+               rdfs:label "hasSuperLevel" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage
@@ -242,7 +242,7 @@
                rdfs:domain :BuildingLifecycleStage ;
                rdfs:range :BuildingLifecycleStage ;
                rdfs:comment "Describe the relationship between main and its sub stages involved in a specific BLCS framework." ;
-               rdfs:label "has Super Stage" .
+               rdfs:label "hasSuperStage" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#isLevelOf
@@ -250,14 +250,15 @@
            rdfs:subPropertyOf <https://w3id.org/digitalconstruction/Contexts#isContextOf> ;
            rdfs:domain :LODLevel ;
            rdfs:range :LOD_Framework ;
-           rdfs:label "is Level Of" .
+           rdfs:label "isLevelOf" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#isLimitedBy
 :isLimitedBy rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <https://w3id.org/digitalconstruction/Variables#isContrainedBy> ;
              rdfs:domain <https://w3id.org/digitalconstruction/Variables#Property> ;
-             rdfs:range <https://w3id.org/digitalconstruction/Variables#PropertyState> .
+             rdfs:range <https://w3id.org/digitalconstruction/Variables#PropertyState> ;
+             rdfs:label "isLimitedBy" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#isStageOf
@@ -265,21 +266,21 @@
            rdfs:subPropertyOf <https://w3id.org/digitalconstruction/Contexts#isContextOf> ;
            rdfs:domain :BuildingLifecycleStage ;
            rdfs:range :BLCS_Framework ;
-           rdfs:label "is Stage Of" .
+           rdfs:label "isStageOf" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#processFrom
 :processFrom rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <https://w3id.org/digitalconstruction/Entities#isAgentIn> ;
              rdfs:comment "Describes the agent who process and updates the information to activity." ;
-             rdfs:label "process From" .
+             rdfs:label "processFrom" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#providesTo
 :providesTo rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <https://w3id.org/digitalconstruction/Entities#isAgentIn> ;
             rdfs:comment "Describes the agent who provides the information coming from the activity." ;
-            rdfs:label "provides To" .
+            rdfs:label "providesTo" .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#requires
@@ -297,7 +298,7 @@
               rdfs:subPropertyOf <http://www.w3.org/ns/prov#WasGeneratedBy> ;
               rdfs:domain <https://w3id.org/digitalconstruction/Entities#BuildingObject> ;
               rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> ;
-              rdfs:label "was needed for" .
+              rdfs:label "wasNeededFor" .
 
 
 ###  https://w3id.org/digitalconstruction/Variables#hasApplicableConstraint
@@ -330,7 +331,7 @@
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#hasValue
 :hasValue rdf:type owl:DatatypeProperty ;
-          rdfs:label "has Value" .
+          rdfs:label "hasValue" .
 
 
 #################################################################
@@ -363,8 +364,7 @@
 
 
 ###  https://w3id.org/digitalconstruction/Entities#BuildingObject
-<https://w3id.org/digitalconstruction/Entities#BuildingObject> rdf:type owl:Class ;
-                                                               rdfs:label "Entities:BuildingObject" .
+<https://w3id.org/digitalconstruction/Entities#BuildingObject> rdf:type owl:Class .
 
 
 ###  https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework
