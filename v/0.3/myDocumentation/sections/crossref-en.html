@@ -1,0 +1,1519 @@
+<h2 id="crossreference" class="list">Cross reference for Digital Construction Lifecycle classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Digital Construction Lifecycle.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Entities#Activity"
+            title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Entities#Agent"
+            title="https://w3id.org/digitalconstruction/Entities#Agent">Agent</a>
+      </li>
+      <li>
+         <a href="#BLCS_Framework"
+            title="https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework">BuildingLifecycleFramework</a>
+      </li>
+      <li>
+         <a href="#BuildingLifecycleStage"
+            title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/bot#Element" title="https://w3id.org/bot#Element">
+            <span>element</span>
+         </a>
+      </li>
+      <li>
+         <a href="#InformationConsumer"
+            title="https://w3id.org/digitalconstruction/Lifecycle#InformationConsumer">InformationConsumer</a>
+      </li>
+      <li>
+         <a href="#InformationFlowRole"
+            title="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole">InformationFlowRole</a>
+      </li>
+      <li>
+         <a href="#InformationProcessor"
+            title="https://w3id.org/digitalconstruction/Lifecycle#InformationProcessor">InformationProcessor</a>
+      </li>
+      <li>
+         <a href="#InformationProvider"
+            title="https://w3id.org/digitalconstruction/Lifecycle#InformationProvider">InformationProvider</a>
+      </li>
+      <li>
+         <a href="#LODLevel"
+            title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+      </li>
+      <li>
+         <a href="#LOD_Framework"
+            title="https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework">LODLevelFramework</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Variables#Property"
+            title="https://w3id.org/digitalconstruction/Variables#Property">
+            <span>property</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Entities#Activity">
+      <h3>Activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#Activity</p>
+      <div class="comment">
+         <span class="markdown">Def: A process that is intentionally performed by an agent.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Entities#hasAgent"
+               title="https://w3id.org/digitalconstruction/Entities#hasAgent">has agent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/digitalconstruction/Entities#hasState"
+               title="https://w3id.org/digitalconstruction/Entities#hasState">has state</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#requires"
+               title="https://w3id.org/digitalconstruction/Lifecycle#requires">requires</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Entities#hasActivity"
+               title="https://w3id.org/digitalconstruction/Entities#hasActivity">has activity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/digitalconstruction/Entities#isAgentIn"
+               title="https://w3id.org/digitalconstruction/Entities#isAgentIn">is agent in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasNeededFor"
+               title="https://w3id.org/digitalconstruction/Lifecycle#wasNeededFor">wasNeededFor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Entities#Agent">
+      <h3>Agent<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#Agent</p>
+      <div class="comment">
+         <span class="markdown">The actors and stakeholders of construction projects.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Entities#hasRole"
+               title="https://w3id.org/digitalconstruction/Entities#hasRole">hasRole</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/digitalconstruction/Entities#isAgentIn"
+               title="https://w3id.org/digitalconstruction/Entities#isAgentIn">is agent in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Entities#hasAgent"
+               title="https://w3id.org/digitalconstruction/Entities#hasAgent">has agent</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/digitalconstruction/Entities#isRoleOf"
+               title="https://w3id.org/digitalconstruction/Entities#isRoleOf">isRoleOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BLCS_Framework">
+      <h3>BuildingLifecycleFramework<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Contexts#ContextFramework">context framework</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasStage">hasStage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isStageOf"
+               title="https://w3id.org/digitalconstruction/Lifecycle#isStageOf">isStageOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BuildingLifecycleStage">
+      <h3>BuildingLifecycleStage<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Contexts#Context">context</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Entities#hasActivity"
+               title="https://w3id.org/digitalconstruction/Entities#hasActivity">has activity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasNextStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasNextStage">hasNextStage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPreviousStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage">hasPreviousStage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage">hasSubStage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSuperStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage">hasSuperStage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isStageOf"
+               title="https://w3id.org/digitalconstruction/Lifecycle#isStageOf">isStageOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Entities#hasState"
+               title="https://w3id.org/digitalconstruction/Entities#hasState">has state</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasNextStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasNextStage">hasNextStage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPreviousStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage">hasPreviousStage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasStage">hasStage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage">hasSubStage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSuperStage"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage">hasSuperStage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/bot#Element">
+      <h3>element<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/bot#Element</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Entities#BuildingObject">building object</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InformationConsumer">
+      <h3>InformationConsumer<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#InformationConsumer</p>
+      <div class="comment">
+         <span class="markdown">Agent who consumes and uses information (models, drawings, other datasets) from activity.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InformationFlowRole"
+               title="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole">InformationFlowRole</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InformationFlowRole">
+      <h3>InformationFlowRole<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://purl.obolibrary.org/obo/BFO_0000023">b f o 0000023</span>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#InformationConsumer"
+               title="https://w3id.org/digitalconstruction/Lifecycle#InformationConsumer">InformationConsumer</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InformationProcessor"
+               title="https://w3id.org/digitalconstruction/Lifecycle#InformationProcessor">InformationProcessor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InformationProvider"
+               title="https://w3id.org/digitalconstruction/Lifecycle#InformationProvider">InformationProvider</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Entities#isRoleOf"
+               title="https://w3id.org/digitalconstruction/Entities#isRoleOf">isRoleOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Entities#hasRole"
+               title="https://w3id.org/digitalconstruction/Entities#hasRole">hasRole</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InformationProcessor">
+      <h3>InformationProcessor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#InformationProcessor</p>
+      <div class="comment">
+         <span class="markdown">Agent who process, updates and manges information (models, drawings, other datasets) to/for activity.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InformationFlowRole"
+               title="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole">InformationFlowRole</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InformationProvider">
+      <h3>InformationProvider<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#InformationProvider</p>
+      <div class="comment">
+         <span class="markdown">Agent who provides information (models, drawings, other datasets) to/for activity.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InformationFlowRole"
+               title="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole">InformationFlowRole</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LODLevel">
+      <h3>LODLevel<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#LODLevel</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Contexts#Context">context</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasNextLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasNextLevel">hasNextLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPreviousLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel">hasPreviousLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel">hasSubLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSuperLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel">hasSuperLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/digitalconstruction/Contexts#isLODLevelOf"
+               title="https://w3id.org/digitalconstruction/Contexts#isLODLevelOf">is LOD Level Of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isLevelOf"
+               title="https://w3id.org/digitalconstruction/Lifecycle#isLevelOf">isLevelOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasLODLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasLODLevel">hasLODLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasLevel">hasLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasNextLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasNextLevel">hasNextLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasPreviousLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel">hasPreviousLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel">hasSubLevel</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSuperLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel">hasSuperLevel</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LOD_Framework">
+      <h3>LODLevelFramework<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Contexts#ContextFramework">context framework</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasLevel"
+               title="https://w3id.org/digitalconstruction/Lifecycle#hasLevel">hasLevel</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isLevelOf"
+               title="https://w3id.org/digitalconstruction/Lifecycle#isLevelOf">isLevelOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Variables#Property">
+      <h3>property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Variables#Property</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isLimitedBy"
+               title="https://w3id.org/digitalconstruction/Lifecycle#isLimitedBy">isLimitedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/digitalconstruction/Variables#hasProperty"
+               title="https://w3id.org/digitalconstruction/Variables#hasProperty">has property</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <span class="dotted"
+                  title="https://w3id.org/digitalconstruction/Variables#PropertyState">property state</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#consumesFrom"
+            title="https://w3id.org/digitalconstruction/Lifecycle#consumesFrom">consumesFrom</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Entities#hasActivity"
+            title="https://w3id.org/digitalconstruction/Entities#hasActivity">
+            <span>has activity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Entities#hasAgent"
+            title="https://w3id.org/digitalconstruction/Entities#hasAgent">
+            <span>has agent</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Variables#hasProperty"
+            title="https://w3id.org/digitalconstruction/Variables#hasProperty">
+            <span>has property</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Entities#hasState"
+            title="https://w3id.org/digitalconstruction/Entities#hasState">
+            <span>has state</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasLevel"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasLevel">hasLevel</a>
+      </li>
+      <li>
+         <a href="#hasLODLevel"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasLODLevel">hasLODLevel</a>
+      </li>
+      <li>
+         <a href="#hasNextLevel"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasNextLevel">hasNextLevel</a>
+      </li>
+      <li>
+         <a href="#hasNextStage"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasNextStage">hasNextStage</a>
+      </li>
+      <li>
+         <a href="#hasPreviousLevel"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel">hasPreviousLevel</a>
+      </li>
+      <li>
+         <a href="#hasPreviousStage"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage">hasPreviousStage</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Entities#hasRole"
+            title="https://w3id.org/digitalconstruction/Entities#hasRole">hasRole</a>
+      </li>
+      <li>
+         <a href="#hasStage"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasStage">hasStage</a>
+      </li>
+      <li>
+         <a href="#hasSubLevel"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel">hasSubLevel</a>
+      </li>
+      <li>
+         <a href="#hasSubStage"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage">hasSubStage</a>
+      </li>
+      <li>
+         <a href="#hasSuperLevel"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel">hasSuperLevel</a>
+      </li>
+      <li>
+         <a href="#hasSuperStage"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage">hasSuperStage</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Entities#isAgentIn"
+            title="https://w3id.org/digitalconstruction/Entities#isAgentIn">
+            <span>is agent in</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Contexts#isLODLevelOf"
+            title="https://w3id.org/digitalconstruction/Contexts#isLODLevelOf">is LOD Level Of</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Variables#isPropertyOf"
+            title="https://w3id.org/digitalconstruction/Variables#isPropertyOf">
+            <span>is property of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isLevelOf"
+            title="https://w3id.org/digitalconstruction/Lifecycle#isLevelOf">isLevelOf</a>
+      </li>
+      <li>
+         <a href="#isLimitedBy"
+            title="https://w3id.org/digitalconstruction/Lifecycle#isLimitedBy">isLimitedBy</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/digitalconstruction/Entities#isRoleOf"
+            title="https://w3id.org/digitalconstruction/Entities#isRoleOf">isRoleOf</a>
+      </li>
+      <li>
+         <a href="#isStageOf"
+            title="https://w3id.org/digitalconstruction/Lifecycle#isStageOf">isStageOf</a>
+      </li>
+      <li>
+         <a href="#processFrom"
+            title="https://w3id.org/digitalconstruction/Lifecycle#processFrom">processFrom</a>
+      </li>
+      <li>
+         <a href="#providesTo"
+            title="https://w3id.org/digitalconstruction/Lifecycle#providesTo">providesTo</a>
+      </li>
+      <li>
+         <a href="#requires"
+            title="https://w3id.org/digitalconstruction/Lifecycle#requires">requires</a>
+      </li>
+      <li>
+         <a href="#wasNeededFor"
+            title="https://w3id.org/digitalconstruction/Lifecycle#wasNeededFor">wasNeededFor</a>
+      </li>
+   </ul>
+   <div class="entity" id="consumesFrom">
+      <h3>consumesFrom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#consumesFrom</p>
+      <div class="comment">
+         <span class="markdown">Describes the agent who consumes the information coming from the activity</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#isAgentIn"
+                  title="https://w3id.org/digitalconstruction/Entities#isAgentIn">is agent in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Entities#hasActivity">
+      <h3>has activity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasActivity</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#hasState"
+                  title="https://w3id.org/digitalconstruction/Entities#hasState">has state</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Entities#hasAgent">
+      <h3>has agent<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasAgent</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Agent"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#isAgentIn"
+                  title="https://w3id.org/digitalconstruction/Entities#isAgentIn">is agent in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Variables#hasProperty">
+      <h3>has property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Variables#hasProperty</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Variables#Property"
+                  title="https://w3id.org/digitalconstruction/Variables#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Variables#isPropertyOf"
+                  title="https://w3id.org/digitalconstruction/Variables#isPropertyOf">is property of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Entities#hasState">
+      <h3>has state<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasState</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#hasActivity"
+                  title="https://w3id.org/digitalconstruction/Entities#hasActivity">has activity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLevel">
+      <h3>hasLevel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasLevel</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#hasContext">has context</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LOD_Framework"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework">LODLevelFramework</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isLevelOf"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#isLevelOf">isLevelOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#hasLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasLevel">hasLevel</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#hasSubLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel">hasSubLevel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasLODLevel">
+      <h3>hasLODLevel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasLODLevel</p>
+      <div class="comment">
+         <span class="markdown">Relationship between property state and level of detail.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Variables#isApplicableIn">is applicable in</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Contexts#isLODLevelOf"
+                  title="https://w3id.org/digitalconstruction/Contexts#isLODLevelOf">is LOD Level Of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNextLevel">
+      <h3>hasNextLevel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasNextLevel</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#nextContext">next context</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasPreviousLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel">hasPreviousLevel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasNextStage">
+      <h3>hasNextStage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasNextStage</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#nextContext">next context</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasPreviousStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage">hasPreviousStage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#hasNextStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasNextStage">hasNextStage</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#hasSubStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage">hasSubStage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPreviousLevel">
+      <h3>hasPreviousLevel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#previousContext">previous context</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasNextLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasNextLevel">hasNextLevel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasPreviousStage">
+      <h3>hasPreviousStage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#previousContext">previous context</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasNextStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasNextStage">hasNextStage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#hasPreviousStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage">hasPreviousStage</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#hasSubStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage">hasSubStage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Entities#hasRole">
+      <h3>hasRole<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#hasRole</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Agent"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InformationFlowRole"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole">InformationFlowRole</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#isRoleOf"
+                  title="https://w3id.org/digitalconstruction/Entities#isRoleOf">isRoleOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStage">
+      <h3>hasStage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasStage</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#hasContext">has context</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BLCS_Framework"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework">BuildingLifecycleFramework</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#isStageOf"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#isStageOf">isStageOf</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-property chains</dt>
+            <dd>
+               <a href="#hasStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasStage">hasStage</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">o</span> 
+               <a href="#hasSubStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage">hasSubStage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubLevel">
+      <h3>hasSubLevel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#hasSubContext">has sub context</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasSuperLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel">hasSuperLevel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubStage">
+      <h3>hasSubStage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasSubStage</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#hasSubContext">has sub context</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasSuperStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage">hasSuperStage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSuperLevel">
+      <h3>hasSuperLevel<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel</p>
+      <div class="comment">
+         <span class="markdown">Represents the relation between Upper levels and its sub level</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#isSubContextOf">is sub context of</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasSubLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel">hasSubLevel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSuperStage">
+      <h3>hasSuperStage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage</p>
+      <div class="comment">
+         <span class="markdown">Describe the relationship between main and its sub stages involved in a specific BLCS framework.</span>
+      </div>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> transitive</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#isSubContextOf">is sub context of</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasSubStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage">hasSubStage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Entities#isAgentIn">
+      <h3>is agent in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isAgentIn</p>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#consumesFrom"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#consumesFrom">consumesFrom</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#processFrom"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#processFrom">processFrom</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#providesTo"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#providesTo">providesTo</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Agent"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#hasAgent"
+                  title="https://w3id.org/digitalconstruction/Entities#hasAgent">has agent</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Contexts#isLODLevelOf">
+      <h3>is LOD Level Of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Contexts#isLODLevelOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Variables#hasApplicableConstraint">has applicable constraint</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasLODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasLODLevel">hasLODLevel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Variables#isPropertyOf">
+      <h3>is property of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Variables#isPropertyOf</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Variables#hasProperty"
+                  title="https://w3id.org/digitalconstruction/Variables#hasProperty">has property</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isLevelOf">
+      <h3>isLevelOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#isLevelOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#isContextOf">is context of</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LODLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">LODLevel</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LOD_Framework"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework">LODLevelFramework</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasLevel"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasLevel">hasLevel</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isLimitedBy">
+      <h3>isLimitedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#isLimitedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Variables#isContrainedBy">is contrained by</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Variables#Property"
+                  title="https://w3id.org/digitalconstruction/Variables#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Variables#PropertyState">property state</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/digitalconstruction/Entities#isRoleOf">
+      <h3>isRoleOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Entities#isRoleOf</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InformationFlowRole"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole">InformationFlowRole</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Agent"
+                  title="https://w3id.org/digitalconstruction/Entities#Agent">Agent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#hasRole"
+                  title="https://w3id.org/digitalconstruction/Entities#hasRole">hasRole</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isStageOf">
+      <h3>isStageOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#isStageOf</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Contexts#isContextOf">is context of</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#BuildingLifecycleStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">BuildingLifecycleStage</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#BLCS_Framework"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework">BuildingLifecycleFramework</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#hasStage"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#hasStage">hasStage</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="processFrom">
+      <h3>processFrom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#processFrom</p>
+      <div class="comment">
+         <span class="markdown">Describes the agent who process and updates the information to activity.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#isAgentIn"
+                  title="https://w3id.org/digitalconstruction/Entities#isAgentIn">is agent in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="providesTo">
+      <h3>providesTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#providesTo</p>
+      <div class="comment">
+         <span class="markdown">Describes the agent who provides the information coming from the activity.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#isAgentIn"
+                  title="https://w3id.org/digitalconstruction/Entities#isAgentIn">is agent in</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="requires">
+      <h3>requires<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#requires</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/prov#generated">generated</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Entities#BuildingObject">building object</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wasNeededFor"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#wasNeededFor">wasNeededFor</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasNeededFor">
+      <h3>wasNeededFor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#wasNeededFor</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/ns/prov#WasGeneratedBy">was generated by</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted"
+                     title="https://w3id.org/digitalconstruction/Entities#BuildingObject">building object</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/digitalconstruction/Entities#Activity"
+                  title="https://w3id.org/digitalconstruction/Entities#Activity">Activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#requires"
+                  title="https://w3id.org/digitalconstruction/Lifecycle#requires">requires</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasValue"
+            title="https://w3id.org/digitalconstruction/Lifecycle#hasValue">hasValue</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasValue">
+      <h3>hasValue<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/digitalconstruction/Lifecycle#hasValue</p>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

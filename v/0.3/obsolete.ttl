@@ -1,0 +1,22 @@
+###  https://w3id.org/digitalconstruction/Lifecycle#UseCase1
+:UseCase1 rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Activity> ;
+          <http://purl.org/dc/terms/description> "Use Case 1: Data acquisition for HVAC Design, Operation and Efficiency Management"^^xsd:string ;
+          rdfs:comment "A group of activities which specifies the information about a specific domain."^^xsd:string ;
+          rdfs:label "Use Case 1"^^xsd:string .
+
+
+###  https://w3id.org/digitalconstruction/Lifecycle#UseCase2
+:UseCase2 rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Activity> ;
+          <http://purl.org/dc/terms/description> "Use Case 2: HVAC Design, Operation and Efficiency Management"^^xsd:string ;
+          rdfs:comment "A group of activities which specifies the information about a specific domain."^^xsd:string ;
+          rdfs:label "Use Case 2"^^xsd:string .
+
+
+###  https://w3id.org/digitalconstruction/Lifecycle#UseCase3
+:UseCase3 rdf:type owl:Class ;
+          rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Activity> ;
+          <http://purl.org/dc/terms/description> "Use Case 3: Fast Track Renovation Operation"^^xsd:string ;
+          rdfs:comment "A group of activities which specifies the information about a specific domain."^^xsd:string ;
+          rdfs:label "Use Case 3"^^xsd:string .
