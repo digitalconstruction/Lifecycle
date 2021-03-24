@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/digitalconstruction/Lifecycle#"
-     xml:base="https://w3id.org/digitalconstruction/Lifecycle"
+<rdf:RDF xmlns="https://w3id.org/digitalconstruction/0.3/Lifecycle#"
+     xml:base="https://w3id.org/digitalconstruction/0.3/Lifecycle"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,14 +9,14 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Lifecycle">
-        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Processes"/>
+    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle">
+        <owl:imports rdf:resource="https://w3id.org/digitalconstruction/0.3/Processes"/>
         <terms:creator>Janakiram Karlapudi (janakiram.karlapudi@tu-dresden.de)</terms:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-18T12:00:00</terms:date>
         <terms:title>Digital Construction Lifecycle</terms:title>
         <vann:preferredNamespacePrefix>dicl</vann:preferredNamespacePrefix>
         <rdfs:comment>An ontology to represent the enhancement of building data throughout the construction lifecycle stages</rdfs:comment>
-        <rdfs:seeAlso>https://w3id.org/digitalconstruction/</rdfs:seeAlso>
+        <rdfs:seeAlso>https://w3id.org/digitalconstruction/0.3/</rdfs:seeAlso>
         <owl:versionInfo>0.1</owl:versionInfo>
     </owl:Ontology>
     
@@ -88,128 +88,128 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Contexts#hasContext -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Contexts#hasContext -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Contexts#hasContext"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Contexts#hasContext"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Contexts#isContextOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Contexts#isContextOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Contexts#isContextOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Contexts#isContextOf"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Contexts#isLODLevelOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Contexts#isLODLevelOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Contexts#isLODLevelOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Variables#hasApplicableConstraint"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#hasLODLevel"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Contexts#isLODLevelOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#hasApplicableConstraint"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasLODLevel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
         <rdfs:label>is LOD Level Of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Contexts#nextContext -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Contexts#nextContext -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Contexts#nextContext"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Contexts#nextContext"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Contexts#previousContext -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Contexts#previousContext -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Contexts#previousContext"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Contexts#previousContext"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#hasActivity -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#hasActivity -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasActivity">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#hasState"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#hasActivity">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#hasState"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#hasAgent -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#hasAgent -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasAgent">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isAgentIn"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#hasAgent">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#isAgentIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#hasRole -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#hasRole -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasRole">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isRoleOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#hasRole">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#isRoleOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationFlowRole"/>
         <rdfs:label>hasRole</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#hasState -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#hasState -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#hasState">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#hasState">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#isAgentIn -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#isAgentIn -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isAgentIn">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#isAgentIn">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#isRoleOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#isRoleOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Entities#isRoleOf">
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#isRoleOf">
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationFlowRole"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Agent"/>
         <rdfs:label>isRoleOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#consumesFrom -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#consumesFrom -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#consumesFrom">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isAgentIn"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#consumesFrom">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#isAgentIn"/>
         <rdfs:comment>Describes the agent who consumes the information coming from the activity</rdfs:comment>
         <rdfs:label>consumesFrom</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasLODLevel -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasLODLevel -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasLODLevel">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Variables#isApplicableIn"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasLODLevel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#isApplicableIn"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
         <terms:description>Describes the property values and their level of detail regarding to the specific LOD Framework</terms:description>
         <rdfs:comment>Relationship between property state and level of detail.</rdfs:comment>
         <rdfs:label>hasLODLevel</rdfs:label>
@@ -217,17 +217,17 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasLevel -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasLevel -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasLevel">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#hasContext"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#isLevelOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasLevel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#hasContext"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#isLevelOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LOD_Framework"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasLevel"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasLevel"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSubLevel"/>
         </owl:propertyChainAxiom>
         <terms:description>Enables the connection betweendifferent levels to its framework</terms:description>
         <rdfs:label>hasLevel</rdfs:label>
@@ -235,33 +235,33 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasNextLevel -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasNextLevel -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasNextLevel">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#nextContext"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasNextLevel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#nextContext"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasPreviousLevel"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
         <terms:description>Indicates the sequence of levels.</terms:description>
         <rdfs:label>hasNextLevel</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasNextStage -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasNextStage -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasNextStage">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#nextContext"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasNextStage">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#nextContext"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasPreviousStage"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasNextStage"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasNextStage"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSubStage"/>
         </owl:propertyChainAxiom>
         <terms:description>Enables the relation between the stages and defines the sequence of the stages.</terms:description>
         <rdfs:label>hasNextStage</rdfs:label>
@@ -269,31 +269,31 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasPreviousLevel -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousLevel">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#previousContext"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasPreviousLevel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#previousContext"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
         <terms:description>Indicates the sequence of levels.</terms:description>
         <rdfs:label>hasPreviousLevel</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasPreviousStage -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#previousContext"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasPreviousStage">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#previousContext"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasPreviousStage"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasPreviousStage"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSubStage"/>
         </owl:propertyChainAxiom>
         <terms:description>Enables the relation between the stages and defines the sequence of the stages.</terms:description>
         <rdfs:label>hasPreviousStage</rdfs:label>
@@ -301,17 +301,17 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasStage -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasStage -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasStage">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#hasContext"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#isStageOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasStage">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#hasContext"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#isStageOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BLCS_Framework"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasStage"/>
-            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasStage"/>
+            <rdf:Description rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSubStage"/>
         </owl:propertyChainAxiom>
         <terms:description>Enables the relationship between the BLCS framework and different stages involved in it.</terms:description>
         <rdfs:label>hasStage</rdfs:label>
@@ -319,184 +319,184 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSubLevel -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasSubLevel">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#hasSubContext"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSubLevel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#hasSubContext"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSuperLevel"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
         <terms:description>Represents the relation between Upper levels and its sub level</terms:description>
         <rdfs:label>hasSubLevel</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasSubStage -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSubStage -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasSubStage">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#hasSubContext"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSubStage">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#hasSubContext"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSuperStage"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
         <terms:description>Describe the relationship between main and its sub stages involved in a specific BLCS framework.</terms:description>
         <rdfs:label>hasSubStage</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSuperLevel -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasSuperLevel">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#isSubContextOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSuperLevel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#isSubContextOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
         <rdfs:comment>Represents the relation between Upper levels and its sub level</rdfs:comment>
         <rdfs:label>hasSuperLevel</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSuperStage -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasSuperStage">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#isSubContextOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasSuperStage">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#isSubContextOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
         <rdfs:comment>Describe the relationship between main and its sub stages involved in a specific BLCS framework.</rdfs:comment>
         <rdfs:label>hasSuperStage</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#isLevelOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#isLevelOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#isLevelOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#isContextOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LODLevel"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#isLevelOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#isContextOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#LOD_Framework"/>
         <rdfs:label>isLevelOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#isLimitedBy -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#isLimitedBy -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#isLimitedBy">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Variables#isContrainedBy"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Variables#Property"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Variables#PropertyState"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#isLimitedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#isContrainedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#Property"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#PropertyState"/>
         <rdfs:label>isLimitedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#isStageOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#isStageOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#isStageOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#isContextOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#isStageOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#isContextOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#BLCS_Framework"/>
         <rdfs:label>isStageOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#processFrom -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#processFrom -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#processFrom">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isAgentIn"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#processFrom">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#isAgentIn"/>
         <rdfs:comment>Describes the agent who process and updates the information to activity.</rdfs:comment>
         <rdfs:label>processFrom</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#providesTo -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#providesTo -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#providesTo">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/Entities#isAgentIn"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#providesTo">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#isAgentIn"/>
         <rdfs:comment>Describes the agent who provides the information coming from the activity.</rdfs:comment>
         <rdfs:label>providesTo</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#requires -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#requires -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#requires">
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#requires">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#generated"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#wasNeededFor"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#BuildingObject"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#wasNeededFor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#BuildingObject"/>
         <terms:description>The object properties defines the needed information about the objects with respect to the completion of the activity.</terms:description>
         <rdfs:label>requires</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#wasNeededFor -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#wasNeededFor -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#wasNeededFor">
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#wasNeededFor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#WasGeneratedBy"/>
-        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/Entities#BuildingObject"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Entities#Activity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#BuildingObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#Activity"/>
         <rdfs:label>wasNeededFor</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Variables#hasApplicableConstraint -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Variables#hasApplicableConstraint -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Variables#hasApplicableConstraint"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Variables#hasApplicableConstraint"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Variables#hasProperty -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Variables#hasProperty -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Variables#hasProperty">
-        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/Variables#isPropertyOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Variables#hasProperty">
+        <owl:inverseOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#isPropertyOf"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/Variables#Property"/>
+        <rdfs:range rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#Property"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Variables#isApplicableIn -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Variables#isApplicableIn -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Variables#isApplicableIn"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Variables#isApplicableIn"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Variables#isContrainedBy -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Variables#isContrainedBy -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Variables#isContrainedBy"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Variables#isContrainedBy"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Variables#isPropertyOf -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Variables#isPropertyOf -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/Variables#isPropertyOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Variables#isPropertyOf">
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
     
@@ -514,10 +514,10 @@
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#hasValue -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#hasValue -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/Lifecycle#hasValue">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#hasValue">
         <rdfs:label>hasValue</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -539,152 +539,152 @@
 
 
     <owl:Class rdf:about="https://w3id.org/bot#Element">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#BuildingObject"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Entities#BuildingObject"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Contexts#Context -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Contexts#Context -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Contexts#Context"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Contexts#Context"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Contexts#ContextFramework -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Contexts#ContextFramework -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Contexts#ContextFramework"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Contexts#ContextFramework"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#Activity -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#Activity -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Activity">
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#Activity">
         <rdfs:comment>Def: A process that is intentionally performed by an agent.</rdfs:comment>
         <rdfs:label>Activity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#Agent -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#Agent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Agent">
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#Agent">
         <rdfs:comment>The actors and stakeholders of construction projects.</rdfs:comment>
         <rdfs:label>Agent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Entities#BuildingObject -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Entities#BuildingObject -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#BuildingObject"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Entities#BuildingObject"/>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#BLCS_Framework -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Lifecycle#BLCS_Framework">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#ContextFramework"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#BLCS_Framework">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#ContextFramework"/>
         <terms:description>Introduces the different Building Life-cycle stage framework</terms:description>
         <rdfs:label>BuildingLifecycleFramework</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Lifecycle#BuildingLifecycleStage">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#Context"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#BuildingLifecycleStage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#Context"/>
         <terms:description>Introduces the different stages involved in building&apos;s life-cycle</terms:description>
         <rdfs:label>BuildingLifecycleStage</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#InformationConsumer -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationConsumer -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Lifecycle#InformationConsumer">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationConsumer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationFlowRole"/>
         <rdfs:comment>Agent who consumes and uses information (models, drawings, other datasets) from activity.</rdfs:comment>
         <rdfs:label>InformationConsumer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationFlowRole -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole">
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationFlowRole">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label>InformationFlowRole</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#InformationProcessor -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationProcessor -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Lifecycle#InformationProcessor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationProcessor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationFlowRole"/>
         <rdfs:comment>Agent who process, updates and manges information (models, drawings, other datasets) to/for activity.</rdfs:comment>
         <rdfs:label>InformationProcessor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#InformationProvider -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationProvider -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Lifecycle#InformationProvider">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Lifecycle#InformationFlowRole"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationProvider">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Lifecycle#InformationFlowRole"/>
         <rdfs:comment>Agent who provides information (models, drawings, other datasets) to/for activity.</rdfs:comment>
         <rdfs:label>InformationProvider</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#LODLevel -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Lifecycle#LODLevel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#Context"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#LODLevel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#Context"/>
         <terms:description>Indicates the different LOD levels deffined with in the different LOD frameworks</terms:description>
         <rdfs:label>LODLevel</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Lifecycle#LOD_Framework -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Lifecycle#LOD_Framework">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Contexts#ContextFramework"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Lifecycle#LOD_Framework">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/0.3/Contexts#ContextFramework"/>
         <terms:description>Represents the defined frameworks according to National or International standards</terms:description>
         <rdfs:label>LODLevelFramework</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Variables#Property -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Variables#Property -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Variables#Property">
-        <owl:disjointWith rdf:resource="https://w3id.org/digitalconstruction/Variables#PropertyState"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Variables#Property">
+        <owl:disjointWith rdf:resource="https://w3id.org/digitalconstruction/0.3/Variables#PropertyState"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/digitalconstruction/Variables#PropertyState -->
+    <!-- https://w3id.org/digitalconstruction/0.3/Variables#PropertyState -->
 
 
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Variables#PropertyState"/>
+    <owl:Class rdf:about="https://w3id.org/digitalconstruction/0.3/Variables#PropertyState"/>
 </rdf:RDF>
 
 
