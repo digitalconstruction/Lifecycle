@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <title>
-   Digital Construction Lifecycle
+   Digital Construction Information
   </title>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
   <style>
@@ -205,7 +205,7 @@
     ],
     "https://schema.org/name": [
       {
-        "@value": "Digital Construction Lifecycle"
+        "@value": "Digital Construction Information"
       }
     ]
   }
@@ -229,7 +229,7 @@
    </span>
   </div>
   <h1>
-   Digital Construction Lifecycle
+   Digital Construction Information
   </h1>
   <section id="metadata">
    <h2 style="display:none;">
@@ -498,7 +498,7 @@ construction projects.
       </p>
       <p align="center" class="BodyText" style="text-align:center">
        <span lang="EN-US">
-        <img height="240" id="Picture 3" src="overview.fld/image001.png" width="223"/>
+        <img id="Picture 3" src="overview.fld/image001.png" width="25%"/>
        </span>
       </p>
       <p class="MsoCaption">
@@ -576,8 +576,10 @@ required information, etc.
       </p>
       <p class="MsoCaption">
        <span lang="EN-US">
-        <img height="262" id="Picture 37" src="overview.fld/image002.png" width="470"/>
+        <img id="Picture 37" src="overview.fld/image002.png" width="60%"/>
        </span>
+      </p>
+      <p class="MsoCaption">
        <a name="_Toc73625821">
         <span lang="EN-GB">
          Figure
@@ -606,8 +608,10 @@ concepts within the BIM4EEB onology suite.
       </p>
       <p class="MsoCaption">
        <span lang="EN-US">
-        <img height="275" id="Picture 28" src="overview.fld/image003.png" width="471"/>
+        <img id="Picture 28" src="overview.fld/image003.png" width="70%"/>
        </span>
+      </p>
+      <p class="MsoCaption">
        <a name="_Toc73625822">
         <span lang="EN-GB">
          Figure
@@ -655,40 +659,82 @@ different renovation projects can adopt different LOD systems, the developed
 ontological structure of the LOD framework can accommodate the different
 standard of representations. The methodological idea is to represent LOD
 systems and their levels scale as classes, which can then be instantiated on a
-project-to-project basis. The class dicl:LODFramework can be instantiated with
+project-to-project basis. The class
+        <tt>
+         dicl:LODFramework
+        </tt>
+        can be instantiated with
 the frameworks called USA BIMForum, UK LOD, Italian LOD, etc. Similarly, the
-levels in different frameworks are added as instances to the class dicl:LODLevel.
+levels in different frameworks are added as instances to the class
+        <tt>
+         dicl:LODLevel
+        </tt>
+        .
 Later on, the link between the framework and its respective levels are
-generated using the object property dicl:hasLevel and its inverse property dicl:isLevelOf.
+generated using the object property
+        <tt>
+         dicl:hasLevel
+        </tt>
+        and its inverse property
+        <tt>
+         dicl:isLevelOf
+        </tt>
+        .
        </span>
       </p>
       <p class="BodyText">
        <span lang="EN-US">
         Furthermore, relationships between the
 levels of a framework are indicated using the transitive object properties
-dicl:hasNextLevel, dicl:hasSubLevel and their inverse properties
-dicl:hasPreviousLevel, dicl:hasSuperLevel respectively. A property
+        <tt>
+         dicl:hasNextLevel
+        </tt>
+        ,
+        <tt>
+         dicl:hasSubLevel
+        </tt>
+        and their inverse properties
+        <tt>
+         dicl:hasPreviousLevel
+        </tt>
+        ,
+        <tt>
+         dicl:hasSuperLevel
+        </tt>
+        respectively. A property
 characteristic called owl:TransitiveProperty is defined for these properties in
 order to represent the aggregation relationship between levels. Similarly, a
-sub-property chain axiom (dicl:hasLevel
+sub-property chain axiom (
+        <tt>
+         dicl:hasLevel
+        </tt>
         <span style="color:#2E74B5">
          o
         </span>
-        dicl:hasSubLevel
+        <tt>
+         dicl:hasSubLevel
+        </tt>
        </span>
        <span lang="EN-US" style='font-family:"Arial",sans-serif;
 color:#2E74B5'>
         →
        </span>
        <span lang="EN-US">
-        dicl:hasLevel) is assigned to the
-object properties dicl:hasLevel to define semantic interpretation between the
+        <tt>
+         dicl:hasLevel
+        </tt>
+        ) is assigned to the
+object properties
+        <tt>
+         dicl:hasLevel
+        </tt>
+        to define semantic interpretation between the
 levels and LOD subtypes.
        </span>
       </p>
       <p align="center" class="BodyText" style="text-align:center">
        <span lang="EN-US">
-        <img height="266" id="Picture 38" src="overview.fld/image004.png" width="470"/>
+        <img id="Picture 38" src="overview.fld/image004.png" width="70%"/>
        </span>
       </p>
       <p class="MsoCaption">
@@ -736,7 +782,7 @@ renovation process.
       </p>
       <p align="center" class="BodyText" style="text-align:center">
        <span lang="EN-US">
-        <img height="271" id="Picture 41" src="overview.fld/image005.png" width="393"/>
+        <img id="Picture 41" src="overview.fld/image005.png" width="35%"/>
        </span>
       </p>
       <p class="MsoCaption">
@@ -765,7 +811,7 @@ pre-defined classes from the BIM4EEB ontologies are considered.
       </p>
       <p align="center" class="BodyText" style="text-align:center">
        <span lang="EN-US">
-        <img height="244" id="Picture 40" src="overview.fld/image006.png" width="505"/>
+        <img id="Picture 40" src="overview.fld/image006.png" width="70%"/>
        </span>
       </p>
       <p class="MsoCaption">
@@ -786,8 +832,11 @@ Building Product Data management
       </p>
       <p class="BodyText">
        <span lang="EN-GB">
-        In Figure 6, the class dice:BuildingObject
-is used to represent the building objects. This class is related to the class
+        In Figure 6, the class
+        <tt>
+         dice:BuildingObject
+        </tt>
+        is used to represent the building objects. This class is related to the class
 dicv:Subject by an equivalent property. The defined classes dicv:Property and
         <a href="https://w3c-lbd-cg.github.io/opm/#PropertyState">
          <span style="color:windowtext;
@@ -808,7 +857,15 @@ This property definition capabilities are attached to the object using the
 object property dich:hasProperty and its inverse property dicv:isPropertyOf.
 This specification of Objectification of the properties also supports the
 modelling relationship between LOD and BIM attributes by using the object
-property dicl:hasLODLevel and its respective inverse property dicl:isLODLevelOf.
+property
+        <tt>
+         dicl:hasLODLevel
+        </tt>
+        and its respective inverse property
+        <tt>
+         dicl:isLODLevelOf
+        </tt>
+        .
 This relationship making it possible to represent the property value at its
 corresponding LOD level.
        </span>
@@ -820,7 +877,11 @@ provides the capability to indicate the source for each growth of information
 (property values) and their LOD levels. This has been achieved by developing a
 relationship between the dici:InformationContainers (documents, models, files,
 etc.) and dicv:PropertyState. This relationship is developed using the object
-property called dicl:isDerivedFrom. Another important criterion is to develop a
+property called
+        <tt>
+         dicl:isDerivedFrom
+        </tt>
+        . Another important criterion is to develop a
 relationship between the LOD-based BIM data and the activities that required
 this data to perform a certain action. This relationship is indicated by using
 the object property dicp:hasObject and its inverse property dicp:isObjectIn.
@@ -838,7 +899,7 @@ stages of the building.
       </p>
       <p align="center" class="BodyText" style="text-align:center">
        <span lang="EN-US">
-        <img border="0" height="215" id="Picture 42" src="overview.fld/image007.png" width="470"/>
+        <img border="0" id="Picture 42" src="overview.fld/image007.png" width="70%"/>
        </span>
       </p>
       <p class="MsoCaption">
@@ -859,7 +920,11 @@ Building Process Data management
       </p>
       <p class="BodyText">
        <span lang="EN-GB">
-        The class dica:Agent in Figure 7 specifies
+        The class
+        <tt>
+         dica:Agent
+        </tt>
+        in Figure 7 specifies
 all actors/stakeholders involved in the building renovation process.
        </span>
        <span lang="EN-GB">
@@ -869,15 +934,65 @@ all actors/stakeholders involved in the building renovation process.
         role of
 different stakeholders involved in the renovation interventions or activities. The
 stakeholder roles are categorized dependent on data development, process and
-consumption activities. A class dicl:informationalRole is defined as subclass
-to dice:Role to substantially accommodate different roles, such are dicl:InformationConsumer,
-dicl: InformationProcessor, dicl: InformationProvider (represented in Figure 2).
+consumption activities. A class
+        <tt>
+         dicl:informationalRole
+        </tt>
+        is defined as subclass
+to
+        <tt>
+         dice:Role
+        </tt>
+        to substantially accommodate different roles, such are
+        <tt>
+         dicl:InformationConsumer
+        </tt>
+        ,
+        <tt>
+         dicl:InformationProcessor
+        </tt>
+        ,
+        <tt>
+         dicl:InformationProvider
+        </tt>
+        (represented in Figure 2).
 The specific Role of an agent assigned to him through the object property
-dice:hasRole and its inverse property dice:isRoleOf. Similarly, a simple
+        <tt>
+         dice:hasRole
+        </tt>
+        and its inverse property
+        <tt>
+         dice:isRoleOf
+        </tt>
+        . Similarly, a simple
 relationship is defined between activity and the agent by using the object
-property dica:hasAgent and its respective inverse property dica:isAgentIn.
-Furthermore, the object property dica:isAgentIn is categorized into three
-sub-properties dicl:consumesFrom, dicl:providesTo and dicl:processFrom, which
+property
+        <tt>
+         dica:hasAgent
+        </tt>
+        and its respective inverse property
+        <tt>
+         dica:isAgentIn
+        </tt>
+        .
+Furthermore, the object property
+        <tt>
+         dica:isAgentIn
+        </tt>
+        is categorized into three
+sub-properties
+        <tt>
+         dicl:consumesFrom
+        </tt>
+        ,
+        <tt>
+         dicl:providesTo
+        </tt>
+        and
+        <tt>
+         dicl:processFrom
+        </tt>
+        , which
 are used based on the role of the agent.
        </span>
       </p>
@@ -889,10 +1004,23 @@ activities involved in a specific process. That means a use-case indicates
 different activities in different BLS and their required data to complete a
 specific process in a building renovation scenario. Concerning the lifecycle
 ontology development, it is also an important parameter to represent this
-grouping mechanism within the ontology representation. A class dicl:InformationalUsecase
-is considered and provided a relationship with dice:Activity by using object
-property called dicl:hasRepresents and its inverse property
-dicl:isRepresentedIn
+grouping mechanism within the ontology representation. A class
+        <tt>
+         dicl:InformationalUsecase
+        </tt>
+        is considered and provided a relationship with
+        <tt>
+         dicp:Activity
+        </tt>
+        by using object
+property called
+        <tt>
+         dicl:hasRepresents
+        </tt>
+        and its inverse property
+        <tt>
+         dicl:isRepresentedIn
+        </tt>
        </span>
       </p>
       <p class="BodyText">
@@ -903,8 +1031,16 @@ extensive analysis is carried in on this list of involved activities for
 building renovation in each Building lifecycle stage. These analysis results
 are considered for the further development of ontology representation. This relationship
 between the BLS and the Activities in Lifecycle ontology framework is
-represented with the help of object property called dicl:hasActivity and its
-inverse property dicl:isActivityIn. The same relationship is comprehensively
+represented with the help of object property called
+        <tt>
+         dicl:hasActivity
+        </tt>
+        and its
+inverse property
+        <tt>
+         dicl:isActivityIn
+        </tt>
+        . The same relationship is comprehensively
 illustrated in
        </span>
        <span lang="EN-GB">
@@ -916,7 +1052,7 @@ illustrated in
       </p>
       <p align="center" class="BodyText" style="text-align:center">
        <span lang="EN-US">
-        <img border="0" height="333" id="Picture 36" src="overview.fld/image008.png" width="470"/>
+        <img border="0" id="Picture 36" src="overview.fld/image008.png" width="70%"/>
        </span>
       </p>
       <p class="MsoCaption">
@@ -953,9 +1089,29 @@ country to country and may also be subjected to differences in legislation.
 extended to BLS representations according to different standards, publications,
 user-defined or project-based specifications. The adopted methodology is similar
 to the LOD framework ontology in terms of assigning the stages as a class
-(dicl:BLStage). It provides the relationship between the stages using the
-object properties called dicl:hasSubStage, dicl:hasNextStage and their respective
-inverse properties dicl:hasSuperStage, dicl:hasPreviousStage. Similarly, the
+(
+        <tt>
+         dicl:BLStage
+        </tt>
+        ). It provides the relationship between the stages using the
+object properties called
+        <tt>
+         dicl:hasSubStage
+        </tt>
+        ,
+        <tt>
+         dicl:hasNextStage
+        </tt>
+        and their respective
+inverse properties
+        <tt>
+         dicl:hasSuperStage
+        </tt>
+        ,
+        <tt>
+         dicl:hasPreviousStage
+        </tt>
+        . Similarly, the
 transitive character of the properties is enabled by assigning owl:TransitiveProperty
 to these object property which further enables the aggregated relationships
 between the stages.
@@ -977,55 +1133,89 @@ sub-stages are also stages to that framework. This semantic meaning is inferred
 in ontology with the help of the subProperty chain axiom (
        </span>
        <span lang="IT" style="font-family:Courier">
-        dicl:hasStage
+        <tt>
+         dicl:hasStage
+        </tt>
         <span style="color:#2E74B5">
          o
         </span>
-        dicl:hasSubStage
+        <tt>
+         dicl:hasSubStage
+        </tt>
        </span>
        <span lang="IT" style='font-family:"Arial",sans-serif;
 color:#2E74B5'>
         →
        </span>
        <span lang="IT" style="font-family:Courier">
-        dicl:hasStage
+        <tt>
+         dicl:hasStage
+        </tt>
        </span>
        <span lang="IT">
-        ) defined to the object property dicl:hasStage. Similarly, in the same
+        ) defined to the object property
+        <tt>
+         dicl:hasStage
+        </tt>
+        . Similarly, in the same
 scenario, the main stage inst:Design (refer Table 7) have a next stage relation
 with the substage called inst:Maintenance (refer Table 7) or vice versa. These
 complex relations are modelled in the ontology by using axioms
        </span>
        <span lang="IT" style="font-family:Courier">
-        dicl:hasNextStage
+        <tt>
+         dicl:hasNextStage
+        </tt>
         <span style="color:#2E74B5">
          o
         </span>
-        dicl:hasSubStage
+        <tt>
+         dicl:hasSubStage
+        </tt>
        </span>
        <span lang="IT" style='font-family:"Arial",sans-serif;
 color:#2E74B5'>
         →
        </span>
        <span lang="IT" style="font-family:Courier">
-        dicl:hasNextStage,
-dicl:hasPreviousStage
+        <tt>
+         dicl:hasNextStage
+        </tt>
+        ,
+        <tt>
+         dicl:hasPreviousStage
+        </tt>
         <span style="color:#2E74B5">
          o
         </span>
-        dicl:hasSubStage
+        <tt>
+         dicl:hasSubStage
+        </tt>
        </span>
        <span lang="IT" style='font-family:"Arial",sans-serif;color:#2E74B5'>
         →
        </span>
        <span lang="IT" style="font-family:Courier">
-        dicl:hasPreviousStage
+        <tt>
+         dicl:hasPreviousStage
+        </tt>
        </span>
        <span lang="IT">
-        assigned to properties dicl:hasNextStage, dicl:hasPreviousStage respectively.
+        assigned to properties
+        <tt>
+         dicl:hasNextStage
+        </tt>
+        ,
+        <tt>
+         dicl:hasPreviousStage
+        </tt>
+        respectively.
 Furthermore, the mapping relationships between the stages from different
 frameworks are modelled by using the symmetric object property
-dicl:isRelaventWith.
+        <tt>
+         dicl:isRelaventWith
+        </tt>
+        .
        </span>
       </p>
       <p class="BodyText">
@@ -1299,15 +1489,15 @@ pp. 321–328
        In domain of
       </th>
       <td>
-       <a href="#hasSuperStage">
-        hasSuperStage
+       <a href="#isStageOf">
+        isStageOf
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#isRelevantWith">
-        isRelevantWith
+       <a href="#hasPreviousStage">
+        hasPreviousStage
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1327,8 +1517,15 @@ pp. 321–328
         op
        </sup>
        <br/>
-       <a href="#hasPreviousStage">
-        hasPreviousStage
+       <a href="#hasSuperStage">
+        hasSuperStage
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isRelevantWith">
+        isRelevantWith
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1341,13 +1538,6 @@ pp. 321–328
         op
        </sup>
        <br/>
-       <a href="#isStageOf">
-        isStageOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
       </td>
      </tr>
      <tr>
@@ -1355,6 +1545,27 @@ pp. 321–328
        In range of
       </th>
       <td>
+       <a href="#isActivityIn">
+        isActivityIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasPreviousStage">
+        hasPreviousStage
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasSuperStage">
+        hasSuperStage
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#hasNextStage">
         hasNextStage
        </a>
@@ -1376,29 +1587,8 @@ pp. 321–328
         op
        </sup>
        <br/>
-       <a href="#hasPreviousStage">
-        hasPreviousStage
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasSuperStage">
-        hasSuperStage
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#hasSubStage">
         hasSubStage
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isActivityIn">
-        isActivityIn
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1489,15 +1679,15 @@ pp. 321–328
        Sub-classes
       </th>
       <td>
-       <a href="#InformationProcessor">
-        InformationProcessor
+       <a href="#InformationProvider">
+        InformationProvider
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#InformationProvider">
-        InformationProvider
+       <a href="#InformationProcessor">
+        InformationProcessor
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1721,8 +1911,8 @@ pp. 321–328
        In domain of
       </th>
       <td>
-       <a href="#hasNextLevel">
-        hasNextLevel
+       <a href="#isLevelOf">
+        isLevelOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1730,27 +1920,6 @@ pp. 321–328
        <br/>
        <a href="#hasSubLevel">
         hasSubLevel
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasSuperLevel">
-        hasSuperLevel
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasPreviousLevel">
-        hasPreviousLevel
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isLevelOf">
-        isLevelOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1763,22 +1932,15 @@ pp. 321–328
         op
        </sup>
        <br/>
-      </td>
-     </tr>
-     <tr>
-      <th>
-       In range of
-      </th>
-      <td>
-       <a href="#hasSuperLevel">
-        hasSuperLevel
+       <a href="#hasNextLevel">
+        hasNextLevel
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasSubLevel">
-        hasSubLevel
+       <a href="#hasSuperLevel">
+        hasSuperLevel
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1791,13 +1953,13 @@ pp. 321–328
         op
        </sup>
        <br/>
-       <a href="#hasLODLevel">
-        hasLODLevel
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
        <a href="#hasLevel">
         hasLevel
        </a>
@@ -1805,8 +1967,36 @@ pp. 321–328
         op
        </sup>
        <br/>
+       <a href="#hasLODLevel">
+        hasLODLevel
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasSuperLevel">
+        hasSuperLevel
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasPreviousLevel">
+        hasPreviousLevel
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#hasNextLevel">
         hasNextLevel
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasSubLevel">
+        hasSubLevel
        </a>
        <sup class="sup-op" title="object property">
         op
